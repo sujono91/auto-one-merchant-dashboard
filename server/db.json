@@ -251,44 +251,14 @@
       "bids": "/merchants/27/bids"
     },
     {
-      "id": 28,
-      "firstname": "Rick",
-      "lastname": "Doe",
-      "avatarUrl": "http://placehold.it/32x32",
-      "email": "rosalesmoon@enervate.com",
-      "phone": "+18014613149",
-      "hasPremium": false,
-      "bids": "/merchants/28/bids"
-    },
-    {
-      "id": 29,
-      "firstname": "Rick",
-      "lastname": "Travolta",
-      "avatarUrl": "http://placehold.it/32x32",
-      "email": "rosalesmoon@enervate.com",
-      "phone": "+19504903764",
-      "hasPremium": false,
-      "bids": "/merchants/29/bids"
-    },
-    {
-      "id": 30,
-      "firstname": "Mary",
-      "lastname": "Doe",
-      "avatarUrl": "http://placehold.it/32x32",
-      "email": "rosalesmoon@enervate.com",
-      "phone": "+19315063296",
-      "hasPremium": true,
-      "bids": "/merchants/30/bids"
-    },
-    {
-      "id": "jlwep7kw",
+      "id": "jlwf5ksr",
       "firstname": "Sujono",
       "lastname": "Chen",
       "avatarUrl": "http://placehold.it/32x32",
       "email": "sujonochen91@gmail.com",
       "phone": "+123",
-      "hasPremium": true,
-      "bids": "/merchants/jlwep7kw/bids"
+      "hasPremium": false,
+      "bids": "/merchants/jlwf5ksr/bids"
     }
   ],
   "bids": [
@@ -468,27 +438,6 @@
       "created": "2017-11-11T01:03:00"
     },
     {
-      "id": 28,
-      "merchantId": 28,
-      "carTitle": "Suzuki",
-      "amount": 39928,
-      "created": "2018-04-14T03:33:09"
-    },
-    {
-      "id": 29,
-      "merchantId": 29,
-      "carTitle": "Honda",
-      "amount": 10701,
-      "created": "2017-07-24T06:25:32"
-    },
-    {
-      "id": 30,
-      "merchantId": 30,
-      "carTitle": "Honda",
-      "amount": 96779,
-      "created": "2014-09-09T07:17:49"
-    },
-    {
       "id": "jlw2v3f7",
       "merchantId": 2,
       "carTitle": "Honda",
@@ -503,11 +452,11 @@
       "created": "Mon, 10 Sep 2018 09:22:44 GMT"
     },
     {
-      "id": "jlwep6dl",
-      "merchantId": "jlwep7kw",
+      "id": "jlwf65ne",
+      "merchantId": "jlwf5ksr",
       "carTitle": "Toyota",
-      "amount": 10000,
-      "created": "Mon, 10 Sep 2018 14:52:33 GMT"
+      "amount": 12000,
+      "created": "Mon, 10 Sep 2018 15:05:46 GMT"
     }
   ]
 }

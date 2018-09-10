@@ -16,13 +16,17 @@ import './styles.css';
 
 class DataTable extends PureComponent {
   handleChangePage = (event, page) => {
-    event.preventDefault();
+    if (event) {
+      event.preventDefault();
+    }
     const { handleChangePage } = this.props;
     handleChangePage(page);
   };
 
   handleChangeRowsPerPage = event => {
-    event.preventDefault();
+    if (event) {
+      event.preventDefault();
+    }
     const { handleChangeRowsPerPage } = this.props;
     handleChangeRowsPerPage(event.target.value);
   };

@@ -113,13 +113,17 @@ class BaseHome extends PureComponent {
       _page: page + 1,
       _limit: rowsPerPage
     }).then(result => {
-      this.setState({
-        data: result.data,
-        rows: this.mappingRows(result.data),
-        cols: this.mappingCols(this.state.isDesktop),
-        count: result.count,
-        isLoading: false
-      });
+      if (result && result.data.length > 0) {
+        return this.setState({
+          data: result.data,
+          rows: this.mappingRows(result.data),
+          cols: this.mappingCols(this.state.isDesktop),
+          count: result.count,
+          isLoading: false
+        });
+      }
+
+      return this.handleChangePage(0);
     });
   };
 
@@ -279,6 +283,8 @@ class BaseHome extends PureComponent {
           handleChangePage={this.handleChangePage}
           handleChangeRowsPerPage={this.handleChangeRowsPerPage}
         />
+        <div className="clear" />
+        <div className="clear" />
         <Tooltip title="Add Merchant">
           <Button
             variant="fab"
