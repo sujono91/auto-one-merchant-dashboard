@@ -110,7 +110,7 @@ class BaseHome extends PureComponent {
     });
 
     return get(endpoint, {
-      _page: page,
+      _page: page + 1,
       _limit: rowsPerPage
     }).then(result => {
       this.setState({

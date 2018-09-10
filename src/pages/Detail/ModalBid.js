@@ -43,11 +43,11 @@ class ModalBid extends PureComponent {
 
     const { carTitle, amount, id, merchantId, created } = this.props;
     this.state = {
-      id,
-      merchantId,
-      carTitle,
-      amount,
-      created,
+      id: id || '',
+      merchantId: merchantId || '',
+      carTitle: carTitle || '',
+      amount: amount || '',
+      created: created || '',
       isSubmit: false,
       errors: []
     };
@@ -101,7 +101,7 @@ class ModalBid extends PureComponent {
 
   editBid = () => {
     const { id, merchantId, carTitle, amount, created } = this.state;
-    const endpoint = formatRef(ENDPOINT.BIDS, id);
+    const { setBid, setIsOpenModalState } = this.props;
     const bid = {
       id,
       merchantId,
@@ -110,17 +110,21 @@ class ModalBid extends PureComponent {
       created
     };
 
-    return edit(endpoint, bid).then(() => {
-      const { setBid, setIsOpenModalState } = this.props;
+    if (merchantId) {
+      const endpoint = formatRef(ENDPOINT.BIDS, id);
+      return edit(endpoint, bid).then(() => {
+        setIsOpenModalState(false);
+        return setBid(bid, CONSTANT.MODE.EDIT);
+      });
+    }
 
-      setIsOpenModalState(false);
-      return setBid(bid, CONSTANT.MODE.EDIT);
-    });
+    setIsOpenModalState(false);
+    return setBid(bid, CONSTANT.MODE.EDIT);
   };
 
   addBid = () => {
     const { merchantId, carTitle, amount } = this.state;
-    const endpoint = formatRef(ENDPOINT.BIDS);
+    const { setBid, setIsOpenModalState } = this.props;
     const bid = {
       id: uniqid(),
       merchantId,
@@ -129,12 +133,16 @@ class ModalBid extends PureComponent {
       created: new Date().toUTCString()
     };
 
-    return add(endpoint, bid).then(() => {
-      const { setBid, setIsOpenModalState } = this.props;
+    if (merchantId) {
+      const endpoint = formatRef(ENDPOINT.BIDS);
+      return add(endpoint, bid).then(() => {
+        setIsOpenModalState(false);
+        return setBid(bid, CONSTANT.MODE.ADD);
+      });
+    }
 
-      setIsOpenModalState(false);
-      return setBid(bid, CONSTANT.MODE.ADD);
-    });
+    setIsOpenModalState(false);
+    return setBid(bid, CONSTANT.MODE.ADD);
   };
 
   render() {

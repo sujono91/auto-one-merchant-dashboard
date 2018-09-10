@@ -4,6 +4,8 @@ import {
   FormControl,
   FormHelperText,
   FormLabel,
+  DialogContent,
+  DialogActions,
   Input,
   InputLabel,
   Switch,
@@ -20,7 +22,7 @@ import uniqid from 'uniqid';
 
 import Loading from '../../components/Loading';
 import DataTable from '../../components/DataTable';
-import { formatRef, get, add, edit, ENDPOINT } from '../../api';
+import { formatRef, get, add, edit, remove, ENDPOINT } from '../../api';
 import { convertNumberToCurrency, convertUtcToLocalDate } from '../../util';
 import CONSTANT from '../../constant';
 import ModalBid from './ModalBid';
@@ -71,20 +73,7 @@ const merchantValidation = new Schema({
     type: String,
     required: true,
     match: /^[+]+[0-9]+$/
-  },
-  bids: [
-    {
-      carTitle: {
-        type: String,
-        required: true
-      },
-      amount: {
-        type: Number,
-        required: true,
-        size: { min: 1 }
-      }
-    }
-  ]
+  }
 });
 
 class BaseDetail extends PureComponent {
@@ -243,7 +232,7 @@ class BaseDetail extends PureComponent {
     const { setModalState, setIsOpenModalState } = this.props;
 
     setModalState({
-      title: 'Edit Bid',
+      title: 'Add Bid',
       content: (
         <ModalBid
           isEdit={false}
@@ -257,7 +246,51 @@ class BaseDetail extends PureComponent {
     return setIsOpenModalState(true);
   };
 
-  deleteBid = row => {};
+  deleteBid = row => {
+    const { setModalState, setIsOpenModalState } = this.props;
+
+    setModalState({
+      title: 'Delete Bid',
+      content: (
+        <Fragment>
+          <DialogContent>
+            Are you sure you want to delete this bid?
+          </DialogContent>
+          <DialogActions>
+            <Button onClick={() => setIsOpenModalState(false)} color="primary">
+              No
+            </Button>
+            <Button
+              onClick={() => this.submitDeleteBid(row)}
+              color="primary"
+              autoFocus
+            >
+              Yes
+            </Button>
+          </DialogActions>
+        </Fragment>
+      )
+    });
+
+    return setIsOpenModalState(true);
+  };
+
+  submitDeleteBid = row => {
+    const { setIsOpenModalState } = this.props;
+    const { id } = this.state;
+
+    if (id) {
+      const endpoint = formatRef(ENDPOINT.BIDS, row.id);
+
+      return remove(endpoint).then(() => {
+        this.setBid(row, CONSTANT.MODE.DELETE);
+        return setIsOpenModalState(false);
+      });
+    }
+
+    this.setBid(row, CONSTANT.MODE.DELETE);
+    return setIsOpenModalState(false);
+  };
 
   setBid = (bid, mode) => {
     const { bidData } = this.state;
@@ -324,7 +357,8 @@ class BaseDetail extends PureComponent {
         firstname,
         phone,
         hasPremium,
-        bids
+        bids,
+        bidData
       } = this.state;
 
       const newId = uniqid();
@@ -339,14 +373,25 @@ class BaseDetail extends PureComponent {
         bids: isEdit ? bids : `/merchants/${newId}/bids`
       };
 
-      const endpoint = formatRef(
-        ENDPOINT.MERCHANTS,
-        isEdit ? this.state.id : undefined
-      );
+      const endpoint = isEdit
+        ? formatRef(ENDPOINT.MERCHANTS, id)
+        : formatRef(ENDPOINT.MERCHANTS);
 
-      const promise = isEdit ? edit(endpoint, data) : add(endpoint, data);
+      let promises = isEdit ? [edit(endpoint, data)] : [add(endpoint, data)];
 
-      return promise.then(() => {
+      if (!isEdit) {
+        const bidEndpoint = formatRef(ENDPOINT.BIDS);
+        const bidPromises = bidData.map(bid => {
+          return add(bidEndpoint, {
+            ...bid,
+            merchantId: newId
+          });
+        });
+
+        promises = [...promises, ...bidPromises];
+      }
+
+      return Promise.all(promises).then(() => {
         const { setNotificationState, history } = this.props;
 
         setNotificationState({

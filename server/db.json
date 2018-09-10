@@ -279,6 +279,16 @@
       "phone": "+19315063296",
       "hasPremium": true,
       "bids": "/merchants/30/bids"
+    },
+    {
+      "id": "jlwep7kw",
+      "firstname": "Sujono",
+      "lastname": "Chen",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "sujonochen91@gmail.com",
+      "phone": "+123",
+      "hasPremium": true,
+      "bids": "/merchants/jlwep7kw/bids"
     }
   ],
   "bids": [
@@ -493,11 +503,11 @@
       "created": "Mon, 10 Sep 2018 09:22:44 GMT"
     },
     {
-      "id": "jlw3639g",
-      "merchantId": 2,
-      "carTitle": "Audi",
+      "id": "jlwep6dl",
+      "merchantId": "jlwep7kw",
+      "carTitle": "Toyota",
       "amount": 10000,
-      "created": "Mon, 10 Sep 2018 09:29:47 GMT"
+      "created": "Mon, 10 Sep 2018 14:52:33 GMT"
     }
   ]
 }
