@@ -9,9 +9,10 @@ const NavBar = ({ title, hasBackAction, navigate, backURL }) => {
       <Toolbar>
         {hasBackAction && (
           <IconButton
+            data-testid="backButton"
             color="inherit"
             onClick={() => {
-              if (navigate) {
+              if (navigate && navigate.push) {
                 navigate.push(backURL);
               }
             }}

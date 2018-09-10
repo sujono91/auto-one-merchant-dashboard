@@ -1,9 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render, cleanup } from 'react-testing-library';
+
 import App from './App';
+jest.mock('./pages/Home', () => {
+  return () => <div>Home</div>;
+});
+
+afterEach(cleanup);
 
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
+  const { getByText } = render(<App />);
+  getByText('Home');
 });

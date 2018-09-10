@@ -1,7 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Snackbar from '@material-ui/core/Snackbar';
+import { Snackbar, IconButton } from '@material-ui/core';
+import { Close as CloseIcon } from '@material-ui/icons';
 
 const Notification = ({ message, isOpen, handleClose }) => {
   return (
@@ -17,6 +18,17 @@ const Notification = ({ message, isOpen, handleClose }) => {
         'aria-describedby': 'message-id'
       }}
       message={<span id="message-id">{message}</span>}
+      action={[
+        <IconButton
+          data-testid="closeButton"
+          key="close"
+          aria-label="Close"
+          color="inherit"
+          onClick={() => handleClose()}
+        >
+          <CloseIcon />
+        </IconButton>
+      ]}
     />
   );
 };
