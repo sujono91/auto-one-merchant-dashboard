@@ -1,4 +1,5 @@
 import React, { Fragment, PureComponent } from 'react';
+import PropTypes from 'prop-types';
 import Schema from 'validate';
 import {
   FormControl,
@@ -203,5 +204,27 @@ class ModalBid extends PureComponent {
     );
   }
 }
+
+ModalBid.propTypes = {
+  carTitle: PropTypes.string,
+  amount: PropTypes.number,
+  id: PropTypes.string,
+  merchantId: PropTypes.string,
+  created: PropTypes.string,
+  isEdit: PropTypes.bool,
+  setBid: PropTypes.func,
+  setIsOpenModalState: PropTypes.func
+};
+
+ModalBid.defaultProps = {
+  carTitle: null,
+  amount: null,
+  id: null,
+  merchantId: null,
+  created: null,
+  isEdit: false,
+  setBid: () => {},
+  setIsOpenModalState: () => {}
+};
 
 export default ModalBid;
