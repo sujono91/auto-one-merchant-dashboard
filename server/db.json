@@ -1,0 +1,503 @@
+{
+  "merchants": [
+    {
+      "id": 2,
+      "firstname": "Ron",
+      "lastname": "Travolta",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+19705162559",
+      "hasPremium": true,
+      "bids": "/merchants/2/bids"
+    },
+    {
+      "id": 3,
+      "firstname": "John",
+      "lastname": "Doe",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+18645693548",
+      "hasPremium": false,
+      "bids": "/merchants/3/bids"
+    },
+    {
+      "id": 4,
+      "firstname": "Mary",
+      "lastname": "Doe",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+19364203436",
+      "hasPremium": false,
+      "bids": "/merchants/4/bids"
+    },
+    {
+      "id": 5,
+      "firstname": "John",
+      "lastname": "Doe",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+18905113557",
+      "hasPremium": true,
+      "bids": "/merchants/5/bids"
+    },
+    {
+      "id": 6,
+      "firstname": "Mary",
+      "lastname": "Travolta",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+18984382090",
+      "hasPremium": false,
+      "bids": "/merchants/6/bids"
+    },
+    {
+      "id": 7,
+      "firstname": "John",
+      "lastname": "Travolta",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+18575163725",
+      "hasPremium": true,
+      "bids": "/merchants/7/bids"
+    },
+    {
+      "id": 8,
+      "firstname": "John",
+      "lastname": "Doe",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+19174812127",
+      "hasPremium": false,
+      "bids": "/merchants/8/bids"
+    },
+    {
+      "id": 9,
+      "firstname": "John",
+      "lastname": "Watson",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+18235633069",
+      "hasPremium": true,
+      "bids": "/merchants/9/bids"
+    },
+    {
+      "id": 10,
+      "firstname": "Mary",
+      "lastname": "Watson",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+19814083125",
+      "hasPremium": true,
+      "bids": "/merchants/10/bids"
+    },
+    {
+      "id": 12,
+      "firstname": "Mary",
+      "lastname": "Travolta",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+18855242970",
+      "hasPremium": true,
+      "bids": "/merchants/12/bids"
+    },
+    {
+      "id": 13,
+      "firstname": "John",
+      "lastname": "Doe",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+19645103342",
+      "hasPremium": false,
+      "bids": "/merchants/13/bids"
+    },
+    {
+      "id": 14,
+      "firstname": "Rick",
+      "lastname": "Watson",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+19634812953",
+      "hasPremium": false,
+      "bids": "/merchants/14/bids"
+    },
+    {
+      "id": 15,
+      "firstname": "John",
+      "lastname": "Doe",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+18074042174",
+      "hasPremium": false,
+      "bids": "/merchants/15/bids"
+    },
+    {
+      "id": 16,
+      "firstname": "John",
+      "lastname": "Watson",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+19135073571",
+      "hasPremium": true,
+      "bids": "/merchants/16/bids"
+    },
+    {
+      "id": 17,
+      "firstname": "Rick",
+      "lastname": "Travolta",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+18454692453",
+      "hasPremium": false,
+      "bids": "/merchants/17/bids"
+    },
+    {
+      "id": 18,
+      "firstname": "Rick",
+      "lastname": "Travolta",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+19374563211",
+      "hasPremium": false,
+      "bids": "/merchants/18/bids"
+    },
+    {
+      "id": 19,
+      "firstname": "John",
+      "lastname": "Watson",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+18094563581",
+      "hasPremium": true,
+      "bids": "/merchants/19/bids"
+    },
+    {
+      "id": 20,
+      "firstname": "John",
+      "lastname": "Travolta",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+19855192674",
+      "hasPremium": true,
+      "bids": "/merchants/20/bids"
+    },
+    {
+      "id": 21,
+      "firstname": "John",
+      "lastname": "Travolta",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+19355622078",
+      "hasPremium": true,
+      "bids": "/merchants/21/bids"
+    },
+    {
+      "id": 22,
+      "firstname": "Mary",
+      "lastname": "Doe",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+18945642577",
+      "hasPremium": false,
+      "bids": "/merchants/22/bids"
+    },
+    {
+      "id": 23,
+      "firstname": "Rick",
+      "lastname": "Travolta",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+19045552753",
+      "hasPremium": false,
+      "bids": "/merchants/23/bids"
+    },
+    {
+      "id": 24,
+      "firstname": "Rick",
+      "lastname": "Doe",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+19614243762",
+      "hasPremium": true,
+      "bids": "/merchants/24/bids"
+    },
+    {
+      "id": 25,
+      "firstname": "Rick",
+      "lastname": "Watson",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+19935703465",
+      "hasPremium": true,
+      "bids": "/merchants/25/bids"
+    },
+    {
+      "id": 26,
+      "firstname": "Mary",
+      "lastname": "Doe",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+18354923316",
+      "hasPremium": true,
+      "bids": "/merchants/26/bids"
+    },
+    {
+      "id": 27,
+      "firstname": "Mary",
+      "lastname": "Doe",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+18944572385",
+      "hasPremium": true,
+      "bids": "/merchants/27/bids"
+    },
+    {
+      "id": 28,
+      "firstname": "Rick",
+      "lastname": "Doe",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+18014613149",
+      "hasPremium": false,
+      "bids": "/merchants/28/bids"
+    },
+    {
+      "id": 29,
+      "firstname": "Rick",
+      "lastname": "Travolta",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+19504903764",
+      "hasPremium": false,
+      "bids": "/merchants/29/bids"
+    },
+    {
+      "id": 30,
+      "firstname": "Mary",
+      "lastname": "Doe",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "rosalesmoon@enervate.com",
+      "phone": "+19315063296",
+      "hasPremium": true,
+      "bids": "/merchants/30/bids"
+    }
+  ],
+  "bids": [
+    {
+      "id": 2,
+      "merchantId": 2,
+      "carTitle": "Toyota",
+      "amount": 20000,
+      "created": "2014-11-29T05:23:56"
+    },
+    {
+      "id": 3,
+      "merchantId": 3,
+      "carTitle": "Suzuki",
+      "amount": 73772,
+      "created": "2016-04-14T05:01:20"
+    },
+    {
+      "id": 4,
+      "merchantId": 4,
+      "carTitle": "Suzuki",
+      "amount": 12774,
+      "created": "2016-08-22T05:45:41"
+    },
+    {
+      "id": 5,
+      "merchantId": 5,
+      "carTitle": "Toyota",
+      "amount": 31747,
+      "created": "2018-02-04T07:07:43"
+    },
+    {
+      "id": 6,
+      "merchantId": 6,
+      "carTitle": "Toyota",
+      "amount": 38670,
+      "created": "2016-12-26T03:12:59"
+    },
+    {
+      "id": 7,
+      "merchantId": 7,
+      "carTitle": "Toyota",
+      "amount": 83762,
+      "created": "2017-12-11T06:18:16"
+    },
+    {
+      "id": 8,
+      "merchantId": 8,
+      "carTitle": "Toyota",
+      "amount": 62185,
+      "created": "2017-09-18T05:31:59"
+    },
+    {
+      "id": 9,
+      "merchantId": 9,
+      "carTitle": "Honda",
+      "amount": 58506,
+      "created": "2014-01-29T01:12:38"
+    },
+    {
+      "id": 10,
+      "merchantId": 10,
+      "carTitle": "Toyota",
+      "amount": 52909,
+      "created": "2015-02-15T06:24:25"
+    },
+    {
+      "id": 12,
+      "merchantId": 12,
+      "carTitle": "Suzuki",
+      "amount": 16502,
+      "created": "2018-04-05T06:00:30"
+    },
+    {
+      "id": 13,
+      "merchantId": 13,
+      "carTitle": "Toyota",
+      "amount": 95270,
+      "created": "2017-12-30T06:39:55"
+    },
+    {
+      "id": 14,
+      "merchantId": 14,
+      "carTitle": "Honda",
+      "amount": 77273,
+      "created": "2016-02-25T04:43:43"
+    },
+    {
+      "id": 15,
+      "merchantId": 15,
+      "carTitle": "Toyota",
+      "amount": 20902,
+      "created": "2016-11-06T03:06:11"
+    },
+    {
+      "id": 16,
+      "merchantId": 16,
+      "carTitle": "Honda",
+      "amount": 16294,
+      "created": "2015-10-30T05:29:23"
+    },
+    {
+      "id": 17,
+      "merchantId": 17,
+      "carTitle": "Suzuki",
+      "amount": 66696,
+      "created": "2014-10-20T10:37:09"
+    },
+    {
+      "id": 18,
+      "merchantId": 18,
+      "carTitle": "Suzuki",
+      "amount": 37214,
+      "created": "2014-12-21T02:23:37"
+    },
+    {
+      "id": 19,
+      "merchantId": 19,
+      "carTitle": "Suzuki",
+      "amount": 39480,
+      "created": "2014-07-05T02:17:40"
+    },
+    {
+      "id": 20,
+      "merchantId": 20,
+      "carTitle": "Toyota",
+      "amount": 12747,
+      "created": "2018-05-22T11:15:46"
+    },
+    {
+      "id": 21,
+      "merchantId": 21,
+      "carTitle": "Suzuki",
+      "amount": 82395,
+      "created": "2016-06-18T02:30:29"
+    },
+    {
+      "id": 22,
+      "merchantId": 22,
+      "carTitle": "Suzuki",
+      "amount": 73536,
+      "created": "2018-08-26T06:49:23"
+    },
+    {
+      "id": 23,
+      "merchantId": 23,
+      "carTitle": "Suzuki",
+      "amount": 29626,
+      "created": "2017-02-05T02:32:13"
+    },
+    {
+      "id": 24,
+      "merchantId": 24,
+      "carTitle": "Toyota",
+      "amount": 70841,
+      "created": "2014-02-21T04:23:29"
+    },
+    {
+      "id": 25,
+      "merchantId": 25,
+      "carTitle": "Honda",
+      "amount": 67817,
+      "created": "2015-05-05T04:19:37"
+    },
+    {
+      "id": 26,
+      "merchantId": 26,
+      "carTitle": "Honda",
+      "amount": 67648,
+      "created": "2016-08-01T02:47:40"
+    },
+    {
+      "id": 27,
+      "merchantId": 27,
+      "carTitle": "Suzuki",
+      "amount": 93827,
+      "created": "2017-11-11T01:03:00"
+    },
+    {
+      "id": 28,
+      "merchantId": 28,
+      "carTitle": "Suzuki",
+      "amount": 39928,
+      "created": "2018-04-14T03:33:09"
+    },
+    {
+      "id": 29,
+      "merchantId": 29,
+      "carTitle": "Honda",
+      "amount": 10701,
+      "created": "2017-07-24T06:25:32"
+    },
+    {
+      "id": 30,
+      "merchantId": 30,
+      "carTitle": "Honda",
+      "amount": 96779,
+      "created": "2014-09-09T07:17:49"
+    },
+    {
+      "id": "jlw2v3f7",
+      "merchantId": 2,
+      "carTitle": "Honda",
+      "amount": 10000,
+      "created": "Mon, 10 Sep 2018 09:21:14 GMT"
+    },
+    {
+      "id": "jlw2x0vp",
+      "merchantId": 2,
+      "carTitle": "Suzuki",
+      "amount": 35000,
+      "created": "Mon, 10 Sep 2018 09:22:44 GMT"
+    },
+    {
+      "id": "jlw3639g",
+      "merchantId": 2,
+      "carTitle": "Audi",
+      "amount": 10000,
+      "created": "Mon, 10 Sep 2018 09:29:47 GMT"
+    }
+  ]
+}

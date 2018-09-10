@@ -1,0 +1,30 @@
+.clear {
+  width: 100%;
+  height: 3em;
+}
+
+.inputPaper {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bidsContainer {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.addBidButton {
+  margin-top: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+  .inputPaper,
+  .bidsContainer {
+    width: 75%;
+  }
+}
