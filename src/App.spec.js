@@ -8,7 +8,7 @@ jest.mock('./pages/Home', () => {
 
 afterEach(cleanup);
 
-it('renders without crashing', () => {
+test('renders without crashing', () => {
   const { getByText } = render(<App />);
   getByText('Home');
 });

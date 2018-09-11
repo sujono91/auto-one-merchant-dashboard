@@ -5,7 +5,7 @@ import Loading from './Loading';
 
 afterEach(cleanup);
 
-it('render loading component successfully', () => {
+test('render loading component successfully', () => {
   const { getByTestId } = render(<Loading />);
   const loadingComponent = getByTestId('loading');
   expect(loadingComponent).not.toBeNull();

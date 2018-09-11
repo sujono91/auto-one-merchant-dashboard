@@ -13,12 +13,12 @@ const props = {
 
 jest.spyOn(props, 'handleClose');
 
-it('render notification component successfully', () => {
+test('render notification component successfully', () => {
   const { getByText } = render(<Notification {...props} />);
   expect(getByText(props.message)).not.toBeNull();
 });
 
-it('should close notification component correctly', () => {
+test('should close notification component correctly', () => {
   const { getByTestId } = render(<Notification {...props} />);
   const closeButtonComponent = getByTestId('closeButton');
   fireEvent.click(closeButtonComponent);

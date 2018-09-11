@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Avatar from '@material-ui/core/Avatar';
 
 const Profile = ({ url }) => {
-  return <Avatar alt="Profile" src={url} />;
+  return <Avatar data-testid="profile" alt="Profile" src={url} />;
 };
 
 Profile.propTypes = {

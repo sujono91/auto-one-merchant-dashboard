@@ -45,7 +45,7 @@ class DataTable extends PureComponent {
     return (
       <Paper style={{ width: '100%' }}>
         <div style={{ overflowX: 'auto' }}>
-          <Table aria-labelledby="tableTitle">
+          <Table aria-labelledby="tableTitle" data-testid="table">
             <DataTableHead cols={cols} />
             <TableBody>
               {isLoading && (
@@ -54,7 +54,7 @@ class DataTable extends PureComponent {
                     colSpan={cols.length + 1}
                     style={{ textAlign: 'center' }}
                   >
-                    <CircularProgress />
+                    <CircularProgress data-testid="loading" />
                   </TableCell>
                 </TableRow>
               )}
@@ -63,7 +63,7 @@ class DataTable extends PureComponent {
                 rows.map((row, index) => {
                   const rowNumber = page * rowsPerPage + index + 1;
                   return (
-                    <TableRow hover key={row.id}>
+                    <TableRow hover key={row.id} data-testid="row">
                       <TableCell className="rowNumber">{rowNumber}</TableCell>
                       {cols.map(col => {
                         return (

@@ -11,6 +11,7 @@ const DataTablePagination = ({
 }) => {
   return (
     <TablePagination
+      data-testid="pagination"
       component="div"
       count={count}
       rowsPerPage={rowsPerPage}

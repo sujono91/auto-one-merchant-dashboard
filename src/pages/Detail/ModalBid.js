@@ -157,7 +157,7 @@ class ModalBid extends PureComponent {
 
     return (
       <Fragment>
-        <DialogContent>
+        <DialogContent data-testid="dialogContent">
           <div className="inputField">
             <FormControl error={validity.carTitle} className="formControl">
               <InputLabel htmlFor="carTitle">Car</InputLabel>

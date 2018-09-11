@@ -18,12 +18,12 @@ const props = {
 
 jest.spyOn(props.navigate, 'push');
 
-it('render navbar component successfully', () => {
+test('render navbar component successfully', () => {
   const { getByText } = render(<NavBar {...props} />);
   expect(getByText(props.title)).not.toBeNull();
 });
 
-it('should not click navigate to previous URL successfully', () => {
+test('should not click navigate to previous URL successfully', () => {
   const modifiedProps = {
     ...props,
     navigate: {}
@@ -34,7 +34,7 @@ it('should not click navigate to previous URL successfully', () => {
   expect(props.navigate.push).not.toHaveBeenCalled();
 });
 
-it('should click navigate to previous URL successfully', () => {
+test('should click navigate to previous URL successfully', () => {
   const { getByTestId } = render(<NavBar {...props} />);
   const backButtonComponent = getByTestId('backButton');
   fireEvent.click(backButtonComponent);

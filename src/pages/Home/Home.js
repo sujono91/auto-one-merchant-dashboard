@@ -146,18 +146,21 @@ class BaseHome extends PureComponent {
           <span>
             <Tooltip title="View Merchant">
               <VisibilityIcon
+                data-testid="viewMerchant"
                 className="icon"
                 onClick={() => this.viewMerchant(row)}
               />
             </Tooltip>
             <Tooltip title="Edit Merchant">
               <EditIcon
+                data-testid="editMerchant"
                 className="icon"
                 onClick={() => this.editMerchant(row)}
               />
             </Tooltip>
             <Tooltip title="Delete Merchant">
               <DeleteIcon
+                data-testid="deleteMerchant"
                 className="icon"
                 onClick={() => this.deleteMerchant(row)}
               />
@@ -276,7 +279,7 @@ class BaseHome extends PureComponent {
     const { home } = this.state;
 
     return (
-      <Fragment>
+      <div data-testid="home">
         <DataTable
           {...this.state}
           {...home}
@@ -289,13 +292,14 @@ class BaseHome extends PureComponent {
           <Button
             variant="fab"
             color="primary"
+            data-testid="addMerchant"
             className="submitButton"
             onClick={this.addMerchant}
           >
             <AddIcon />
           </Button>
         </Tooltip>
-      </Fragment>
+      </div>
     );
   }
 }

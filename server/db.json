@@ -259,6 +259,16 @@
       "phone": "+123",
       "hasPremium": false,
       "bids": "/merchants/jlwf5ksr/bids"
+    },
+    {
+      "id": "jlxgtvex",
+      "firstname": "Johannes",
+      "lastname": "Henkie",
+      "avatarUrl": "http://placehold.it/32x32",
+      "email": "test@gmail.com",
+      "phone": "+123",
+      "hasPremium": true,
+      "bids": "/merchants/jlxgtvex/bids"
     }
   ],
   "bids": [
@@ -447,7 +457,7 @@
     {
       "id": "jlw2x0vp",
       "merchantId": 2,
-      "carTitle": "Suzuki",
+      "carTitle": "Audi",
       "amount": 35000,
       "created": "Mon, 10 Sep 2018 09:22:44 GMT"
     },
@@ -457,6 +467,13 @@
       "carTitle": "Toyota",
       "amount": 12000,
       "created": "Mon, 10 Sep 2018 15:05:46 GMT"
+    },
+    {
+      "id": "jlxgtthl",
+      "merchantId": "jlxgtvex",
+      "carTitle": "Toyota",
+      "amount": 10000,
+      "created": "Tue, 11 Sep 2018 08:39:55 GMT"
     }
   ]
 }

@@ -5,12 +5,12 @@ import './styles.css';
 
 const DataTableHead = ({ cols }) => {
   return (
-    <TableHead>
+    <TableHead data-testid="tableHead">
       <TableRow>
         <TableCell className="rowNumber">#</TableCell>
         {cols.map(col => {
           return <TableCell key={col.id}>{col.label}</TableCell>;
-        }, this)}
+        })}
       </TableRow>
     </TableHead>
   );
