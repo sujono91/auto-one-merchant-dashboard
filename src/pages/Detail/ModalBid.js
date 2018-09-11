@@ -162,6 +162,7 @@ class ModalBid extends PureComponent {
             <FormControl error={validity.carTitle} className="formControl">
               <InputLabel htmlFor="carTitle">Car</InputLabel>
               <Input
+                placeholder="Car Title"
                 className="input"
                 id="carTitle"
                 value={carTitle}
@@ -176,6 +177,7 @@ class ModalBid extends PureComponent {
             <FormControl error={validity.amount} className="formControl">
               <InputLabel htmlFor="amount">Amount ($)</InputLabel>
               <Input
+                placeholder="0"
                 type="number"
                 className="input"
                 id="amount"

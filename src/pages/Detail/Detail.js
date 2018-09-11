@@ -457,12 +457,13 @@ class BaseDetail extends PureComponent {
         {!isLoading && (
           <Fragment>
             <div className="clear" />
-            <Paper className="inputPaper">
+            <Paper className="inputPaper" data-testid="detailMerchant">
               <br />
               <div className="inputField">
                 <FormControl error={validity.firstname} className="formControl">
                   <InputLabel htmlFor="firstname">First Name</InputLabel>
                   <Input
+                    placeholder="First Name"
                     className="input"
                     id="firstname"
                     disabled={mode === CONSTANT.MODE.DETAIL}
@@ -480,6 +481,7 @@ class BaseDetail extends PureComponent {
                 <FormControl error={validity.lastname} className="formControl">
                   <InputLabel htmlFor="lastname">Last Name</InputLabel>
                   <Input
+                    placeholder="Last Name"
                     className="input"
                     id="lastname"
                     disabled={mode === CONSTANT.MODE.DETAIL}
@@ -497,6 +499,7 @@ class BaseDetail extends PureComponent {
                 <FormControl error={validity.email} className="formControl">
                   <InputLabel htmlFor="email">Email</InputLabel>
                   <Input
+                    placeholder="Email"
                     className="input"
                     id="email"
                     disabled={mode === CONSTANT.MODE.DETAIL}
@@ -512,6 +515,7 @@ class BaseDetail extends PureComponent {
                 <FormControl error={validity.phone} className="formControl">
                   <InputLabel htmlFor="phone">Phone</InputLabel>
                   <Input
+                    placeholder="Phone"
                     className="input"
                     id="phone"
                     disabled={mode === CONSTANT.MODE.DETAIL}
